@@ -206,7 +206,7 @@
       class:in-range={inRange(min)}
       style="{orientationStart}: 0%;"
       on:pointerdown={(e)=>{labelDown(e)}}
-      on:pointerup={(e)=>{labelUp(pipVal(min),e)}}
+      on:pointerup={(e)=>{labelUp(pipVal(0),e)}}
     >
       {#if all === 'label' || first === 'label'}
         <span class="pipVal">
