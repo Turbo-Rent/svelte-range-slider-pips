@@ -98,6 +98,7 @@
   }
   :global(.rangePips) {
     position: absolute;
+    cursor: pointer;
     height: 1em;
     left: 0;
     right: 0;
