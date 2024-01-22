@@ -841,7 +841,7 @@
       <span class="rangeNub" />
       {#if float}
         <span class="rangeFloat">
-          {#if prefix}<span class="rangeFloat-prefix">{prefix}</span>{/if}{handleFormatter(value,index,percentOf(value))}{#if suffix}<span class="rangeFloat-suffix">{suffix}</span>{/if}
+          {#if prefix}<span class="rangeFloat-prefix">{prefix}</span>{/if}{handleFormatter(value,index,percentOf(value))}
         </span>
       {/if}
     </span>
