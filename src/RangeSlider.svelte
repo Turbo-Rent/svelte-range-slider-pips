@@ -33,7 +33,6 @@
   export let id = undefined;
   export let prefix = "";
   export let suffix = "";
-  export let suffixLast = "";
   export let formatter = (v,i,p) => v;
   export let handleFormatter = formatter;
   export let ariaLabels = [];
@@ -872,7 +871,6 @@
       {pipstep}
       {prefix}
       {suffix}
-      {suffixLast}
       {formatter}
       {focus}
       {percentOf}

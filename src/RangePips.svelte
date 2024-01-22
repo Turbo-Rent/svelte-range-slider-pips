@@ -21,7 +21,6 @@
   // formatting props
   export let prefix = "";
   export let suffix = "";
-  export let suffixLast = "";
   export let formatter = (v,i) => v;
 
   // stylistic props
@@ -212,7 +211,7 @@
     >
       {#if all === 'label' || first === 'label'}
         <span class="pipVal">
-          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(min),0,0)}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}
+          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(min),0,0)}
         </span>
       {/if}
     </span>
@@ -231,7 +230,7 @@
         >
           {#if all === 'label' || rest === 'label'}
             <span class="pipVal">
-              {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(pipVal(i),i,percentOf(pipVal(i)))}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}
+              {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(pipVal(i),i,percentOf(pipVal(i)))}
             </span>
           {/if}
         </span>
@@ -250,7 +249,7 @@
     >
       {#if all === 'label' || last === 'label'}
         <span class="pipVal">
-          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(max),pipCount,100)}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}{#if suffixLast}<span class="pipVal-suffix">{suffixLast}</span>{/if}
+          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(max),pipCount,100)}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}
         </span>
       {/if}
     </span>
