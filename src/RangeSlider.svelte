@@ -801,6 +801,7 @@
 <div
   {id}
   bind:this={slider}
+  role="group"
   class="rangeSlider"
   class:range
   class:disabled

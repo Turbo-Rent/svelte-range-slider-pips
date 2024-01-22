@@ -193,12 +193,13 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div 
-  class="rangePips" 
+  class="rangePips"
   class:disabled
   class:hoverable 
   class:vertical 
   class:reversed 
-  class:focus 
+  class:focus
+  role="group"
 >
   {#if ( all && first !== false ) || first }
     <span
@@ -254,5 +255,4 @@
       {/if}
     </span>
   {/if}
-  
 </div>
