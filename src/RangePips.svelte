@@ -21,6 +21,7 @@
   // formatting props
   export let prefix = "";
   export let suffix = "";
+  export let suffixLast = "";
   export let formatter = (v,i) => v;
 
   // stylistic props
@@ -249,7 +250,7 @@
     >
       {#if all === 'label' || last === 'label'}
         <span class="pipVal">
-          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(max),pipCount,100)}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}
+          {#if prefix}<span class="pipVal-prefix">{prefix}</span>{/if}{formatter(fixFloat(max),pipCount,100)}{#if suffix}<span class="pipVal-suffix">{suffix}</span>{/if}{#if suffixLast}<span class="pipVal-suffix">{suffixLast}</span>{/if}
         </span>
       {/if}
     </span>
